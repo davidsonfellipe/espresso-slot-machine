@@ -1,0 +1,44 @@
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(141, 143, 135, 1);
+  background: #95AB9D url(../img/texture.png) repeat top left;
+  color: #3a2127;
+  font-weight: 400;
+  font-size: 15px;
+  overflow-y: scroll;
+
+  &:before {
+    content: "";
+    height: 10px;
+    left: 0;
+    position: fixed;
+    top: -10px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    z-index: 100;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.esm-footer {
+  color: rgba(255, 255, 255, .7);
+  font-family: @font-family-secondary;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 30px auto;
+  text-align: center;
+  text-transform: lowercase;
+  width: 100%;
+}

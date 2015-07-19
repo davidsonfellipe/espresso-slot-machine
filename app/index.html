@@ -1,0 +1,60 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" class="no-js" itemscope="" itemtype="http://schema.org/WebPage"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Espresso Slot Machine</title>
+
+        <meta name="description" content="Espresso Slot Machine">
+
+        <!-- Enable responsive viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- css:app -->
+        <!-- base on https://github.com/suitcss/components-arrange/ -->
+        <link rel="stylesheet" href="build/css/app.css">
+
+        <!--[if lt IE 9]>
+            <script src="build/vendor/html5shiv/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <section class="esm-machine">
+            <div class="esm-machine-wrapper">
+                <h1 class="esm-machine-display"></h1>
+                <ul class="esm-machine-reels">
+                    <li class="esm-machine-reel esm-machine-reel-type-1"></li>
+                    <li class="esm-machine-reel esm-machine-reel-type-2"></li>
+                    <li class="esm-machine-reel esm-machine-reel-type-3"></li>
+                </ul>
+                <button class="esm-machine-button" data-machine-action="start">spin</button>
+            </div>
+        </section>
+
+        <footer class="esm-footer">
+            <span>made with ♥ by Davidson Fellipe</span>
+        </footer>
+
+        <!-- app:js -->
+        <script src="build/vendor/jquery/jquery.js"></script>
+        <script>
+          WebFontConfig = {
+            google: { families: [ 'Monoton::latin', 'Montserrat:700:latin' ] }
+          };
+          (function() {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+              '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+          })();
+        </script>
+        <script src="build/js/all.js"></script>
+    </body>
+</html>

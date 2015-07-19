@@ -1,0 +1,27 @@
+{
+  "name": "espresso-slot-machine",
+  "version": "1.0.0",
+  "authors": [
+    "Davidson Fellipe <email@fellipe.com>"
+  ],
+  "description": "Espresso Slot Machine",
+  "license": "MIT",
+  "homepage": "http://fellipe.com/demos/espresso-slot-machine/app",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.2",
+    "html5shiv": "~3.7.2",
+    "jquery": "~2.1.1"
+  },
+  "install": {
+    "path": "app/build/vendor",
+    "sources": {}
+  }
+}

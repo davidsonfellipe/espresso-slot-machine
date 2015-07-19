@@ -1,0 +1,49 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Espresso Slot Machine ~ Spec Runner</title>
+
+    <link rel="stylesheet" href="lib/mocha/mocha.css">
+</head>
+<body>
+    <div id="mocha"></div>
+
+    <section class="esm-machine">
+        <div class="esm-machine-wrapper">
+            <h1 class="esm-machine-display"></h1>
+            <ul class="esm-machine-reels">
+                <li class="esm-machine-reel esm-machine-reel-type-1"></li>
+                <li class="esm-machine-reel esm-machine-reel-type-2"></li>
+                <li class="esm-machine-reel esm-machine-reel-type-3"></li>
+            </ul>
+            <button class="esm-machine-button" data-machine-action="start">spin</button>
+        </div>
+    </section>
+
+    <script src="lib/mocha/mocha.js"></script>
+    <script>mocha.setup('bdd')</script>
+    <!-- assertion framework -->
+    <script src="lib/chai.js"></script>
+    <script>
+    var assert = chai.assert;
+    var should = chai.should();
+    var expect = chai.expect;
+    </script>
+
+    <!-- include source files here... -->
+    <!-- css:vendor -->
+    <link rel="stylesheet" href="../build/vendor/normalize.css/normalize.css">
+
+    <!-- css:app -->
+    <link rel="stylesheet" href="../build/css/app.css">
+
+    <script src="../build/vendor/jquery/jquery.js"></script>
+
+    <script src="../build/js/all.js"></script>
+    <!-- include spec files here... -->
+    <script src="spec/component.machine.spec.js"></script>
+
+    <script>mocha.run()</script>
+</body>
+</html>

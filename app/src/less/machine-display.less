@@ -1,0 +1,69 @@
+@-webkit-keyframes breath {
+  50% {
+    text-shadow: 0 0 3px rgba(255, 100, 0, .5),
+                 0 2px 8px rgba(255, 100, 0, .5),
+                 0 0 30px rgba(255, 100, 0, .2);
+  }
+
+  100% {
+    text-shadow: 0 0 3px rgba(255, 100, 0, 1),
+                 0 2px 8px rgba(255, 100, 0, 1),
+                 0 0 30px rgba(255, 100, 0, .4);
+  }
+}
+
+.esm-machine-display {
+  font-size: 15px;
+  color: #fed;
+  font-family: @font-family-main;
+  font-weight: normal;
+  line-height: 1em;
+  max-height: 2em;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  visibility: hidden;
+  width: 90%;
+  z-index: 10;
+  transition: text-shadow .2s linear;
+
+  animation: breath .3s linear infinite;
+
+  // solution to avoid FOUT/flicker
+  // .wf-active is a default class of google web font to indicate that fonts was loaded
+  .wf-active & {
+    visibility: visible;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .esm-machine-display {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .esm-machine-display {
+    font-size: 42px;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .esm-machine-display {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .esm-machine-display {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .esm-machine-display {
+    font-size: 60px;
+  }
+}

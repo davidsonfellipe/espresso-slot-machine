@@ -1,0 +1,5 @@
+build:
+  - 'less'
+  - 'concat'
+  - 'imagemin'
+  - 'autoprefixer'

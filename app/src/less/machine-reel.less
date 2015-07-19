@@ -1,0 +1,79 @@
+@-webkit-keyframes blink {
+  100% {
+    color: #333;
+  }
+}
+
+.esm-machine {
+
+  &-reels {
+    border-radius: .5em;
+    margin: 0 auto 20px auto;
+    overflow: hidden;
+    padding: 20px 3%;
+    background-color: rgba(0, 0, 0, .15);
+  }
+
+  &-reel {
+    background: url("../img/slots-join.jpg") #eee repeat-y 12% 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0) inset;
+    display: block;
+    float: left;
+    height: 100px;
+    margin: 0 0 0 5%;
+    opacity: .8;
+    width: 30%;
+    transition: background-position 1.5s cubic-bezier(.5, -.1, .4, 1.2);
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:after {
+      content: "";
+      display: table;
+    }
+  }
+
+  &-reel--blink {
+    animation: blink .5s linear 5;
+  }
+}
+
+.esm-machine-reel-type-2 {
+  background-position: 50% 0;
+}
+
+.esm-machine-reel-type-3 {
+  background-position: 90% 0;
+}
+
+@media only screen and (min-width : 240px) {
+
+  .esm-machine-reel-type-3 {
+    background-position: 90% 0;
+  }
+}
+
+@media only screen and (min-width : 480px) {
+
+  .esm-machine-reel-type-1 {
+    background-position: 8% 0;
+  }
+
+  .esm-machine-reel-type-3 {
+    background-position: 97% 0;
+  }
+
+}
+
+@media only screen and (min-width : 640px) {
+
+  .esm-machine-reel-type-1 {
+    background-position: 2% 0;
+  }
+
+  .esm-machine-reel-type-3 {
+    background-position: 100% 0;
+  }
+}
