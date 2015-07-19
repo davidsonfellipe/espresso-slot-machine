@@ -206,3 +206,13 @@ ul {
     background-position: 100% 0;
   }
 }
+.esm-social {
+  margin: 30px auto;
+  max-width: 600px;
+  text-align: center;
+}
+.esm-social-item {
+  display: inline-block;
+  margin-right: 30px;
+  vertical-align: top;
+}
