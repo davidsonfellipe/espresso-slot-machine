@@ -6,7 +6,7 @@
   ],
   "description": "Espresso Slot Machine",
   "license": "MIT",
-  "homepage": "http://fellipe.com/demos/espresso-slot-machine/app",
+  "homepage": "http://fellipe.com/labs/espresso-slot-machine/",
   "private": true,
   "ignore": [
     "**/.*",
